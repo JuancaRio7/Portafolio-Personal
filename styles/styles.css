@@ -1,0 +1,769 @@
+/*Estilos Generales*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*Importación de una nueva fuente*/
+@font-face{
+    font-family:"FredokaOne";
+    src: url("../fonts/FredokaOne-Regular.ttf");
+}
+/*Limpiar los flotados*/
+.clearfix{
+    float: none;
+    clear: both;
+}
+#header {
+	width: 100%;
+	text-align: center;
+	background-color: #333;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-size: cover;
+	height: 150px;
+	opacity: 0.8;
+}
+#header img{
+    width: 50%;
+    height: 150px;
+    
+}
+#header h1{
+    color:#eee;
+    padding-bottom: 20px;
+}
+header h2{
+    color: #eee;
+    padding-top: 20px;
+    line-height: 75px;
+}
+
+#navegacion {
+	width: 100%;
+	background-color: #32bdd8;
+	height: 50px;
+    line-height: 50px;
+}
+.navegacion-fija{
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+}
+#navegacion ul{
+    float: right;
+    padding-right: 40px ;
+    
+}
+#navegacion ul li {
+    display: block;
+    float: left;
+    list-style: none;
+}
+
+#navegacion ul li a {
+	color: #eee;
+	text-decoration: none;
+	width: 100px;
+	display: block;
+	text-align: center;
+	font-size: 16px;
+}
+#navegacion ul li a:hover{
+    background-color: #eee;
+    color: #010
+}
+
+#skillset{
+    margin: 0px auto;
+    width: 100%;
+    min-height: 700px;
+    background-color: #32bdd8;
+    display: block;
+    float: left;
+}
+.titulo {
+	text-align: center;
+	font-size: 50px;
+	color: #eee;
+	text-transform: uppercase;
+	padding-top: 90px;
+	padding-bottom: 40px;
+	font-family: cursive;
+}
+#linea-difumina {
+	width: 80%;
+	margin-left: 95px;
+	margin-top: 20px;
+    color: #eee;
+    display: none;
+}
+/*Proyectos*/
+#container{
+
+        width: 100%;
+        min-height: 700px;
+        background-color: chocolate;
+}
+
+#projects {
+	min-height: 800px;
+	width: 100%;
+}
+#projects {
+    width: 100%;
+    min-height: 700px;
+    background-color: chocolate;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin: 0px auto;
+}
+
+.project {
+	display: block;
+	float: left;
+	width: 20%;
+	background-color: blueviolet;
+	padding-top: 40px;
+	min-height: 250px;
+	text-align: center;
+	box-shadow: -5px 5px 15px black;
+	border-radius: 5px;
+	/* margin: 0px auto; */
+	margin-left: 10%;
+	padding-bottom: 25px;
+}
+.project h3 {
+	margin: 0px auto;
+	padding-bottom: 40px;
+	color: #ccc;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: "FredokaOne";
+	color: #eee;
+	text-shadow: 1px 1px 3px #ccc;
+}
+
+.img-project, .back {
+    backface-visibility: hidden;
+  }
+.img-project{
+    width: 55%;
+    height: 255px;
+    display: block;
+    margin: 0px auto;
+    z-index: 2;
+    transform: rotateY(0deg);
+    transition: all 0.3s linear;
+}
+.back{
+    transition: all 0.3s linear;
+    transform: rotateY(180deg);
+}
+
+.back > ul > li{
+    list-style: none;
+} 
+
+.project:hover > .img-project{
+    transform: rotateY(180deg);
+}
+.project:hover .back{
+    transform: rotateY(360deg);
+}
+.project a {
+	text-decoration: none;
+	display: block;
+	color: #ccc;
+	background-color: limegreen;
+	padding: 13px;
+	border-radius: 10px;
+	margin-left: 135px;
+	margin-top: 15px;
+	margin: 0px auto;
+	margin-top: 15px;
+	width: 32%;
+}
+.project a:hover{
+    background-color: rgba(50, 205, 50, 0.8);
+    box-shadow: 0px 0px 4px #333 inset;
+}
+
+
+/*Habilidades*/
+#align-skillset {
+	width: 64%;
+	display: block;
+	margin: 0px auto;
+	height: 600px;
+}
+.skill-image,
+#responsive {
+	width: 150px;
+	border-radius: 40px;
+	margin: 0px auto;
+	margin-left: 15%;
+	margin-top: 50px;
+	display: block;
+	float: left;
+    cursor: pointer;
+}
+
+#responsive{
+    height: 150px;
+}
+/*Formulario*/
+
+#formulario{
+    width: 100%;
+    background-color: #32bdd8;   
+    min-height: 900px; 
+    clear: both;
+    float: left;
+}
+#formulario label {
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 93px;
+    padding-bottom: 5px;
+    font-size: 22px;
+    color: #333;
+    display: block;
+    margin-bottom: 30px;
+    color: #ccc;
+
+}
+
+#formulario input[type="text"], input[type="email"], input[type="number"] {
+	display: block;
+	margin-left: 93px;
+	padding: 4px;
+	width: 80%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+    background-color: #32bdd8;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: black !important;
+}
+.error{
+        display: block;
+        margin-left: 93px !important;
+        margin-top: 20px !important;
+        color: red !important;
+        font-size: 18px !important;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+        padding-left:0px !important ;
+        font-weight: bold;
+}
+
+#formulario input:focus{
+    background-color: rgb(255, 255, 26);
+}
+#formulario input[type="submit"] {
+	display: block;
+	margin: 0px auto;
+	margin-top: 40px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #fe9141;
+	border: 1px solid #fe9141;
+    color: #eee;
+    cursor: pointer;
+    font-weight: bold;
+}
+#formulario input[type="submit"]:hover {
+    background-color: rgba(254, 145, 65, 0.9);
+}
+
+#social {
+	display: block;
+	float: left;
+	text-align: center;
+	width: 100%;
+	height: 60px;
+	line-height: 75px;
+	background-color: #32bdd8;
+	padding-top: 15px;
+}
+#social a {
+	width: 40px;
+	display: inline-block;
+	height: 40px;
+	line-height: 25px;
+	margin-right: 25px;
+	margin-left: 30px;
+}
+
+#social > a > img{
+    width: 40px;
+}
+#pie-pagina {
+	background-color: #333;
+	text-align: center;
+	min-height: 105px;
+	line-height: 105px;
+	font-size: 18px;
+	color: #ccc;
+}
+
+.subir {
+	color: #ccc;
+	text-decoration: none;
+	display: block;
+	float: right;
+	padding-right: 15px;
+	position: absolute;
+	right: 0%;
+	top: 2772px;
+	width: 5%;
+}
+
+
+    /*Pixel 1750 */
+
+    @media(max-width:1750px) {
+        .project {
+            width: 25%;
+            margin-left: 6%;
+        }
+         #pie-pagina > h4 {
+            font-size: 18px;
+        }
+
+    }
+
+
+    /*Pixel 1278*/
+@media(max-width:1278px){
+    #align-skillset {
+        width: 40%;
+        display: block;
+        margin: 0px auto;
+        height: 600px;
+    }
+
+    .subir{
+        width: 10%;
+        top: 3172px;
+    }
+}
+
+/* Pixel 1205*/
+
+@media(max-width:1205px){
+    /*Proyectos*/
+    #projects {
+        min-height: 705px;
+    }
+    .project {
+        display: block;
+        float: left;
+        width: 25%;
+        background-color: blueviolet;
+        padding-top: 40px;
+        min-height: 250px;
+        text-align: center;
+        box-shadow: -5px 5px 15px black;
+        border-radius: 5px;
+        margin: 0px auto;
+        margin-left: 6%;
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+    }
+    .img-project {
+        width: 70%;
+        height: 260px;
+        display: block;
+        margin: 0px auto;
+    }
+    #responsive{
+        width: 100px;
+        height: 105px;
+        margin-top: 70px;
+    }
+    .project a {
+        text-decoration: none;
+        display: block;
+        color: #ccc;
+        background-color: limegreen;
+        padding: 13px;
+        border-radius: 10px;
+        margin: 0px auto;
+        margin-top: 15px;
+        width: 45%;
+    }
+    /*Habilidades*/
+    #align-skillset {
+        width: 85%;
+        display: block;
+        margin: 0px auto;
+        height: 600px;
+    }
+    .skill-image{
+        width: 100px;
+        border-radius: 25px;
+        margin: 0px auto;
+        margin-left: 17%;
+        margin-top: 70px;
+        display: block;
+        float: left;
+    }
+    .subir {
+        top: 2777px;
+        width: 10%;
+    }
+}
+
+
+@media(max-width:900px){
+    /*Proyectos*/
+    .project > h3{
+        font-size: 18px;
+    }
+    .img-project {
+        width: 80%;
+        height: 260px;
+        display: block;
+        margin: 0px auto;
+    }
+    .project a {
+        width: 50%;
+    }
+    /*Habilidades*/
+    #align-skillset{
+        width: 100%;
+    }
+    .skill-image {
+        margin-left: 15%;
+    }
+    #linea-difumina {
+        width: 72%;
+        margin-left: 95px;
+        margin-top: 20px;
+        color: #eee;
+    }
+    #formulario input[type="text"], input[type="email"], input[type="number"] {
+        display: block;
+        margin-left: 93px;
+        padding: 4px;
+        width: 72%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: #32bdd8;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .subir {
+        top: 2777px;
+        width: 14%;
+    }
+}
+@media(max-width:898px){
+    .subir{
+        top: 2807px;
+    }
+}
+
+@media(max-width:877px){
+    #projects{
+        min-height: 800px;
+    }
+    .project{
+        height: 500px;
+    }
+    .project > h4{
+        font-size:16px;
+        text-align:left;
+        margin-left:100px;
+    }
+    .subir {
+        top: 2871px;
+    }
+}
+
+@media(max-width:700px){
+    /*Proyectos*/
+    #projects {
+        width: 100%;
+        min-height: 2000px;
+        background-color: chocolate;
+        padding-top: 40px;
+        padding-bottom: 60px;
+        margin: 0px auto;
+    }
+    .project {
+        margin-left: 26%;
+        width: 50%;
+        height: 440px;
+    }
+    .project > h3 {
+        font-size: 25px;
+    }
+
+    .img-project{
+        width: 60%;
+        max-height: 150px;
+    }
+    /*Lista de Lenguajes con los que esta hecho el proyecto  */
+    .back{
+        font-size: 14px;
+        font-family: "FredokaOne";
+    }
+
+    .back > ul > li{
+        margin-top: 10px;
+    }
+
+    .project > a {
+        width: 40%;
+        font-size: 15px;
+        margin-top: 30px;
+        height: 35px;
+        line-height: 35px;
+        font-family: "FredokaOne";
+    }
+    /*Habilidades*/
+    .skill-image{
+        margin-left: 13%;
+     }
+     #pie-pagina > h4 {
+         font-size: 16px;
+     }
+     .subir {
+        /* top: 3713px; */
+        display: none !important;
+    }
+}
+
+
+@media(max-width:600px){
+    .project {
+        margin-left: 25%;
+        width: 50%;
+        height: 440px;
+        margin-bottom: 80px;
+    }
+    .project > a{
+        width: 40%;
+        font-size: 12px;
+    }
+    #align-skillset{
+        width: 100%;
+    }
+    .skill-image {
+        margin-left: 11%;
+    }
+    .subir {
+        /* top: 3680px; */
+        display: none;
+    }
+    
+}
+@media(max-width:520px){
+    .project {
+        margin-left: 20%;
+        width: 60%;
+        min-height: 390px;
+    }
+    .project > a{
+        width: 90px;
+        font-size: 14px;
+    }
+    #align-skillset {
+        width: 100%;
+    }
+    .skill-image {
+        margin-left: 10%;
+    }
+    #pie-pagina h4 {
+        font-size: 13px;
+    }
+}
+    @media(max-width:480px){
+
+        .project > a {
+            font-size: 12px;
+            width: 80px;
+        }
+        #linea-difumina {
+            width: 65%;
+            margin-left: 94px;
+            margin-top: 20px;
+            color: #eee;
+        }
+        .skill-image {
+            width: 90px;
+            margin-left: 10%;
+        }
+        #formulario input[type="text"],
+         input[type="email"],
+          input[type="number"] {
+            width: 61%;
+        }
+    }
+    @media(max-width:430px){
+        #navegacion ul {
+            float: left;
+            padding-left: 70px;
+        }
+        #header > h1{
+            font-size: 20px;
+        }
+
+        .project > h3{
+            font-size: 20px;
+        }
+        .skill-image {
+            margin-left: 20%;
+        }
+        #responsive {
+            height: 90px;
+        }
+    }
+@media(max-width:413px){
+    header h2 {
+        color: #eee;
+        padding-top: 20px;
+        line-height: 35px;
+    }
+    #projects{
+        min-height: 1800px;
+    }
+    .project {
+        margin-left: 20%;
+        width: 60%;
+        height: 440px;
+    }
+    .skill-image,
+    #respondive{
+        margin-left: 8%;
+    }
+    #responsive {
+        height: 90px;
+    }
+}
+
+/*Media queri Samsung Galaxy a20e*/
+@media(max-width:360px){
+
+    /*Menu navegación*/
+    #navegacion ul {
+        padding-left: 20px;
+    }
+    #navegacion > ul > li {
+        display: block;
+        float: left;
+        list-style: none;
+        width: 91px;
+        padding-left: 12px;
+    }
+    #navegacion ul li a {
+        width: 91px;
+    }
+    /*Proyectos*/
+    header h2 {
+        color: #eee;
+        padding-top: 20px;
+        line-height: 90px;
+    }
+    #navegacion ul {
+        padding-right: 0px;
+    }
+    #projects {
+        min-height: 1740px;
+    }
+    .project {
+        width: 73%;
+        height: 360px;
+        margin-left: 50px;
+    }
+    .project h3 {
+        font-size: 19px;
+        margin: 0px auto;
+        padding-bottom: 20px;
+        color: #cccc;
+        font-weight: 900;
+        font-family: Arial Black;
+        text-decoration: none;
+        text-shadow: 1px 2px 1px black;
+    }
+    .project a {
+        text-decoration: none;
+        display: block;
+        color: #ccc;
+        padding: 13px;
+        border-radius: 10px;
+        width: 35%;
+        margin-left: 75px;
+        float: left;
+    }
+    .img-project {
+        height: 150px;
+    }
+    /*Habilidades*/
+    #skillset {
+        min-height: 1700px;
+    }
+    .titulo {
+        font-size: 40px;
+    }
+    #linea-difumina {
+        width: 80%;
+        margin-left: 95px;
+        margin-top: 20px;
+        color: #eee;
+        margin: 0px auto;
+        margin-top: 20px;
+    }
+    #align-skillset {
+        min-height: 1500px;
+    }
+    .skill-image,
+    #responsive {
+        width: 90px;
+        border-radius: 25px;
+        margin: 0px auto;
+        margin-left: 40%;
+        margin-top: 50px;
+        float: left;
+    }
+    /*Formulario*/
+    #formulario input[type="text"], input[type="email"], input[type="number"] {
+        display: block;
+        margin-left: 93px;
+        padding: 4px;
+        width: 45%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: #32bdd8;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .error{
+        font-size: 15px !important;
+    }
+    /*Pie de Página*/
+    #pie-pagina h4 {
+        font-size: 13px;
+    }
+
+    .subir {
+        top: 50%;
+        position: fixed;
+        font-size: 14px;
+        height: 68px;
+        color: #444;
+        font-weight: 1000;
+        font-family: sans serif;
+    }
+
+}
+
+@media(max-width:346px){
+
+}
